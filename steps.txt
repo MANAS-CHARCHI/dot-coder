@@ -1,0 +1,66 @@
+Phase 1 — Foundation (learn the basics)
+
+Learn Python basics — variables, functions, loops, if/else                                      [✔️]
+Learn how to read and write files in Python using pathlib                                       [✔️]
+Call Gemini API for the first time — just send a message, get a reply                           [✔️]
+Understand how to keep a conversation history (list of messages)                                [✔️]
+
+
+Phase 2 — Core Engine
+
+Build the agent loop — while True, call LLM, check if done, repeat
+Write the 5 core tools — read_file, write_file, list_files, create_folder, run_command
+Build the tool parser — read the LLM's reply, find the tool call, run it
+Build the token tracker — log every LLM call, count tokens, calculate cost
+OS detection — detect Mac/Windows/Linux, handle paths correctly with pathlib
+
+
+Phase 3 — Terminal UI
+
+Install rich library
+Build colored output — each agent prints in its own color
+Add spinners — show animation while LLM is thinking
+Add progress display — show which agent is running, which are waiting
+Build token dashboard — live token count and cost in terminal
+
+
+Phase 4 — Agent Prompts
+
+Write Sales agent prompt — asks user questions, writes requirements.md
+Write Manager agent prompt — reads requirements, writes project plan
+Write Architect agent prompt — reads plan, writes system design
+Write DB Engineer prompt — reads design, writes schema plan
+Write Backend Engineer prompt — reads schema, writes API plan
+Write Frontend Engineer prompt — reads API plan, writes UI plan
+Write Coder agent prompt — reads task lists, writes actual code
+Write Tester agent prompt — writes tests, runs them, reports bugs
+Write Delivery agent prompt — reads everything, writes final report
+
+
+Phase 5 — The Pipeline
+
+Build the file handoff system — each agent reads previous agent's files
+Build the pipeline runner — runs all agents in the right order
+Build the Sales conversation — ask user questions one by one in terminal
+Build model selection — let user pick which LLM for each agent
+Handle tech stack choices — frontend, backend, database, multiple DBs
+Build the Coder + Tester loop — loop until all tests pass
+Build error recovery — if an agent fails, retry or ask user what to do
+
+
+Phase 6 — Testing
+
+Test the full pipeline with a simple project — todo app
+Test with a medium project — user auth + dashboard
+Test with a complex project — multiple databases, multiple services
+Fix prompt issues — tune each agent based on real test results
+Test on Mac, Windows, Linux — make sure paths and commands work
+
+
+Phase 7 — Polish
+
+Build the .coder folder structure creator — auto create all folders on start
+Build a resume feature — if pipeline stops halfway, continue from where it stopped
+Build the final token report — print full table at the end showing every agent's cost
+Write a README — how to install and run the whole thing
+Package it — make it runnable with one command: python coder.py

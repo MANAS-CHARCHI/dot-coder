@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2026-05-03T19:32:46.734468",
+    "agent": "test",
+    "model": "gemini-2.5-flash-lite",
+    "input_tokens": 12,
+    "output_tokens": 2,
+    "cost_usd": 0.0,
+    "duration_ms": 4332,
+    "user_message": {
+      "role": "user",
+      "parts": [
+        {
+          "text": "say hello in one sentence"
+        }
+      ]
+    },
+    "reply": "Hello!"
+  }
+]
